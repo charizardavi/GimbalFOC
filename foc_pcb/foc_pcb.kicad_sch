@@ -13511,7 +13511,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "SK32"
+		(property "Value" "SK33"
 			(at 619.76 85.0899 90)
 			(effects
 				(font
@@ -13520,7 +13520,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SK32WA:SOD-123F_L2.8-W1.8-LS3.7-RD"
+		(property "Footprint" "SK33-TP:WE-TVSP_DO-214AB_BIDIRECTIONAL"
 			(at 617.22 83.82 0)
 			(effects
 				(font

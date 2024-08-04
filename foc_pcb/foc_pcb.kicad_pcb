@@ -2190,7 +2190,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J8"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "88bb3dcf-285e-41dc-8390-52668c2dcdcf")
 			(effects
@@ -2201,7 +2201,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 0 4.87 360)
+			(at 0 4.87 0)
 			(layer "F.Fab")
 			(uuid "3073dc6b-c2e6-4168-850f-8eca72568e2a")
 			(effects
@@ -4922,7 +4922,7 @@
 		(uuid "573b2609-6bb7-4408-9839-8a74dbe577c3")
 		(at 130.81 151.13 180)
 		(property "Reference" "J6"
-			(at -4.8236 -13.51498 360)
+			(at -4.8236 -13.51498 0)
 			(layer "F.SilkS")
 			(uuid "6bd402f5-0834-413a-8303-0b0259bdb3f5")
 			(effects
@@ -4933,7 +4933,7 @@
 			)
 		)
 		(property "Value" "XT60PW-M"
-			(at 0.9054 -12.0434 360)
+			(at 0.9054 -12.0434 0)
 			(layer "F.Fab")
 			(uuid "f101376a-8850-4117-ac88-85fd610fcb53")
 			(effects
@@ -4944,7 +4944,7 @@
 			)
 		)
 		(property "Footprint" "XT60PW-M:AMASS_XT60PW-M"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c9d1eb89-4e68-4a72-ac95-788c2996845a")
@@ -4956,7 +4956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5510a6a3-1914-43fe-bc77-3cd171ab5dd8")
@@ -4968,7 +4968,7 @@
 			)
 		)
 		(property "Description" "\nSocket, DC supply, male, PIN: 2\n"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e77f2660-93a0-4d26-9d2b-374482d921d1")
@@ -6428,7 +6428,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J9"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "5db9bf22-b278-4946-a2e0-f3cea6299e9e")
 			(effects
@@ -6439,7 +6439,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 0 4.87 360)
+			(at 0 4.87 0)
 			(layer "F.Fab")
 			(uuid "ed63cd77-ea78-4334-ae70-e32a390171dc")
 			(effects
@@ -7425,7 +7425,7 @@
 		(descr "USB Type C, right-angle, SMT, https://datasheet.lcsc.com/lcsc/2204071530_G-Switch-GT-USB-7010ASV_C2988369.pdf")
 		(tags "USB C Type-C Receptacle SMD")
 		(property "Reference" "J1"
-			(at 0 -5.5 360)
+			(at 0 -5.5 0)
 			(layer "F.SilkS")
 			(uuid "ff2c8738-8f33-467c-9782-a616e1cf6a35")
 			(effects
@@ -7436,7 +7436,7 @@
 			)
 		)
 		(property "Value" "USB_C_Receptacle_USB2.0"
-			(at 0 5 360)
+			(at 0 5 0)
 			(layer "F.Fab")
 			(uuid "32e120a3-3664-42dc-afd3-fb5c883374f8")
 			(effects
@@ -7621,7 +7621,7 @@
 			(uuid "96cd7bab-1b38-4c2c-b83f-384138d14452")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "5177b988-d793-480b-b8f5-53a299a1dd14")
 			(effects
@@ -7852,7 +7852,7 @@
 		(descr "Through hole straight pin header, 1x02, 2.54mm pitch, single row")
 		(tags "Through hole pin header THT 1x02 2.54mm single row")
 		(property "Reference" "J7"
-			(at 0 -2.33 360)
+			(at 0 -2.33 0)
 			(layer "F.SilkS")
 			(uuid "f5becca2-2efe-4454-8e69-09d4f877995e")
 			(effects
@@ -7863,7 +7863,7 @@
 			)
 		)
 		(property "Value" "Conn_01x02"
-			(at 0 4.87 360)
+			(at 0 4.87 0)
 			(layer "F.Fab")
 			(uuid "bf6ffda4-9502-4b61-96ac-c97eaf882e90")
 			(effects
@@ -15190,7 +15190,7 @@
 		(uuid "fdf5a2b4-2aad-4e9a-ada8-10cdcb6bda79")
 		(at 114.3 151.13 180)
 		(property "Reference" "J5"
-			(at -4.8236 -13.51498 360)
+			(at -4.8236 -13.51498 0)
 			(layer "F.SilkS")
 			(uuid "6199a184-6042-43a5-92eb-716b54f6f0f6")
 			(effects
@@ -15201,7 +15201,7 @@
 			)
 		)
 		(property "Value" "XT60PW-M"
-			(at 0.9054 -12.0434 360)
+			(at 0.9054 -12.0434 0)
 			(layer "F.Fab")
 			(uuid "dd02f0cf-373c-4665-b9a1-82692238db12")
 			(effects
@@ -15212,7 +15212,7 @@
 			)
 		)
 		(property "Footprint" "XT60PW-M:AMASS_XT60PW-M"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "9a3754b0-8005-4b12-ba1c-7c6411d5d952")
@@ -15224,7 +15224,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "6747f280-4ea1-475f-b66f-bc1f004d8be5")
@@ -15236,7 +15236,7 @@
 			)
 		)
 		(property "Description" "\nSocket, DC supply, male, PIN: 2\n"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c767ec6a-4ef8-404a-bc1b-ebf4565fe8dc")
