@@ -1,4 +1,11 @@
-23752144354182796
+23753867280456775
+1N5819HW-7-F
+SOD3715X145N
+
+
+0
+2
+2
 ABM3-16.000MHZ-B2-T
 XTAL_ABM3-16.000MHZ-B2-T
 
@@ -64686,6 +64693,13 @@ Yellow 5381 Series LED
 0
 2
 2
+LM317LCPK
+VREG_LM317LCPK
+
+
+0
+3
+3
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -88934,13 +88948,6 @@ rotary encoder illuminated switch vertical
 0
 9
 8
-SPM6530T-R47M170
-IND_SPM6530T-R47M170
-
-
-0
-2
-2
 Sensor
 ASAIR_AM2302_P2.54mm_Lead2.75mm_TabDown
 Temperature and humidity module, http://akizukidenshi.com/download/ds/aosong/AM2302.pdf
