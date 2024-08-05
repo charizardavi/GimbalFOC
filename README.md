@@ -6,12 +6,12 @@ A gimbal BLDC controller that uses an ATMega328p with a DRV8313PWPR. Communicate
 - Battery: Any 4-5S LiPO with an XT60 connector
 
 ## Completed
-- Initial schema, with a few flaws (listed in todo)
+- Initial schema ~~, with a few flaws (listed in todo)~~ flaws fixed (?)
 - Intial footprint sourcing
 
 ## TODO
 - Find capacitor and resistor manufacturers
-- Does usb power go to 5v or vcc?
-- C_in and C_out of LM2596, working example: https://electronics.stackexchange.com/questions/547010/lm2596s-5-circuit-7-x-v-instead-of-5v-output-voltage-what-did-i-do-wrong
-- How much does what inductor I pick matter for the LM2596?
+~~- Does usb power go to 5v or vcc?~~ It goes to 5v, added diode for reverse current protection
+~~- C_in and C_out of LM2596, working example: https://electronics.stackexchange.com/questions/547010/lm2596s-5-circuit-7-x-v-instead-of-5v-output-voltage-what-did-i-do-wrong~~ Swapped over to LM317L, capacitors listed in datasheet
+~~- How much does what inductor I pick matter for the LM2596?~~ Swapped over to LM317L, no inductor needed
 - find digikey sources for JLC parts, or replace parts, to assemble by hand rather than with PCBA service
