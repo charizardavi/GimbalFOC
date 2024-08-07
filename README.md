@@ -11,5 +11,5 @@ A gimbal BLDC controller that uses an ATMega328p with a DRV8313PWPR. Communicate
 
 ## TODO
 - Find capacitor and resistor manufacturers
-- Layout PCB
+- Wire PCB
 - find digikey sources for JLC parts, or replace parts, to assemble by hand rather than with PCBA service (partially done)
