@@ -10860,7 +10860,7 @@
 				)
 			)
 		)
-		(property "Footprint" "ATMEGA328P-AU:QFP80P900X900X120-32N"
+		(property "Footprint" "ATMEGA328P-AU-NEW:QFP80P900X900X120-32N"
 			(at 768.35 111.76 0)
 			(effects
 				(font
@@ -10879,7 +10879,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "\nAVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB (16K x 16) FLASH 32-TQFP (7x7)\n"
+		(property "Description" "AVR AVR® ATmega Microcontroller IC 8-Bit 20MHz 32KB (16K x 16) FLASH 32-TQFP (7x7)"
 			(at 768.35 111.76 0)
 			(effects
 				(font
