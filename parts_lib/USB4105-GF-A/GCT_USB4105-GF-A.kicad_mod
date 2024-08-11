@@ -1,5 +1,5 @@
 
-(footprint GCT_USB4105-GF-A (layer F.Cu) (tedit 66B7F2F4)
+(footprint GCT_USB4105-GF-A (layer F.Cu) (tedit 66B816A3)
   (descr "")
   (attr smd)
   (fp_text reference REF** (at -1.825 -8.635 0) (layer F.SilkS)

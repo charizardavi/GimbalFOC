@@ -4,7 +4,7 @@
     (property "Reference" "J" (id 0) (at -15.24 13.97 0)
       (effects (font (size 1.27 1.27)) (justify bottom left))
     )
-    (property "Value" "USB4105-GF-A" (id 1) (at -15.24 -15.24 0)
+    (property "Value" "USB4105-GF-A" (id 1) (at -15.24 -27.94 0)
       (effects (font (size 1.27 1.27)) (justify bottom left))
     )
     (property "Footprint" "USB4105-GF-A:GCT_USB4105-GF-A" (id 2) (at 0 0 0)
@@ -47,7 +47,7 @@
       (effects (font (size 1.27 1.27)) (justify bottom) hide)
     )
     (symbol "USB4105-GF-A_0_0"
-      (rectangle (start -15.24 -12.7) (end 15.24 12.7)
+      (rectangle (start -15.24 -25.4) (end 15.24 12.7)
         (stroke (width 0.254)) (fill (type background))
       )
       (pin bidirectional line (at -20.32 5.08 0) (length 5.08)
@@ -90,15 +90,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 10.16 180.0) (length 5.08)
-        (name "VBUS"
-          (effects (font (size 1.016 1.016)))
-        )
-        (number "B4_A9"
-          (effects (font (size 1.016 1.016)))
-        )
-      )
-      (pin bidirectional line (at 20.32 5.08 180.0) (length 5.08)
+      (pin bidirectional line (at 20.32 2.54 180.0) (length 5.08)
         (name "CC2"
           (effects (font (size 1.016 1.016)))
         )
@@ -106,7 +98,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin bidirectional line (at 20.32 2.54 180.0) (length 5.08)
+      (pin bidirectional line (at 20.32 0.0 180.0) (length 5.08)
         (name "DP2"
           (effects (font (size 1.016 1.016)))
         )
@@ -114,7 +106,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin bidirectional line (at 20.32 0.0 180.0) (length 5.08)
+      (pin bidirectional line (at 20.32 -2.54 180.0) (length 5.08)
         (name "DN2"
           (effects (font (size 1.016 1.016)))
         )
@@ -122,7 +114,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin bidirectional line (at 20.32 -2.54 180.0) (length 5.08)
+      (pin bidirectional line (at 20.32 -5.08 180.0) (length 5.08)
         (name "SBU2"
           (effects (font (size 1.016 1.016)))
         )
@@ -130,7 +122,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -7.62 180.0) (length 5.08)
+      (pin power_in line (at 20.32 -10.16 180.0) (length 5.08)
         (name "GND"
           (effects (font (size 1.016 1.016)))
         )
@@ -138,15 +130,7 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -7.62 180.0) (length 5.08)
-        (name "GND"
-          (effects (font (size 1.016 1.016)))
-        )
-        (number "B1_A12"
-          (effects (font (size 1.016 1.016)))
-        )
-      )
-      (pin power_in line (at 20.32 -10.16 180.0) (length 5.08)
+      (pin power_in line (at 20.32 -15.24 180.0) (length 5.08)
         (name "SHELL_GND"
           (effects (font (size 1.016 1.016)))
         )
@@ -154,24 +138,40 @@
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -10.16 180.0) (length 5.08)
-        (name "SHELL_GND"
+      (pin power_in line (at 20.32 7.62 180.0) (length 5.08)
+        (name "VBUS__1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B4_A9"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 20.32 -12.7 180.0) (length 5.08)
+        (name "GND__1"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "B1_A12"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin power_in line (at 20.32 -17.78 180.0) (length 5.08)
+        (name "SHELL_GND__1"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH2"
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -10.16 180.0) (length 5.08)
-        (name "SHELL_GND"
+      (pin power_in line (at 20.32 -20.32 180.0) (length 5.08)
+        (name "SHELL_GND__2"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH3"
           (effects (font (size 1.016 1.016)))
         )
       )
-      (pin power_in line (at 20.32 -10.16 180.0) (length 5.08)
-        (name "SHELL_GND"
+      (pin power_in line (at 20.32 -22.86 180.0) (length 5.08)
+        (name "SHELL_GND__3"
           (effects (font (size 1.016 1.016)))
         )
         (number "SH4"
