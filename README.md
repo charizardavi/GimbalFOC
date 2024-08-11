@@ -6,10 +6,9 @@ A gimbal BLDC controller that uses an ATMega328p with a DRV8313PWPR. Communicate
 - Battery: Any 4-5S LiPO with an XT60 connector
 
 ## Completed
-- Initial schema
-- Intial footprint sourcing
+- Schema
+- PCB design
 
 ## TODO
 - Find capacitor and resistor manufacturers
-- Wire PCB
-- find digikey sources for JLC parts, or replace parts, to assemble by hand rather than with PCBA service (partially done)
+- Add optional other motor mounts for smaller sizes
