@@ -14883,8 +14883,8 @@
 				)
 			)
 		)
-		(property "Value" "19-213/Y2C-CQ2R2L/3T(CY)"
-			(at 176.53 107.95 0)
+		(property "Value" "150060RS75000"
+			(at 168.148 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)

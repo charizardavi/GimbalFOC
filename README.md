@@ -10,5 +10,4 @@ A gimbal BLDC controller that uses an ATMega328p with a DRV8313PWPR. Communicate
 - PCB design
 
 ## TODO
-- Find capacitor and resistor manufacturers
-- Add optional other motor mounts for smaller sizes
+- Assembly and Testing
