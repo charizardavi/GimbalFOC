@@ -18684,7 +18684,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at -3.365 0 0)
+			(at -0.445 -1.27 0)
 			(layer "B.Fab")
 			(uuid "275b2ef9-7ce9-48e8-b83e-a48ac4939550")
 			(effects
