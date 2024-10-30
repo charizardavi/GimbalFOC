@@ -26,5 +26,4 @@ void loop()
   Serial.print("\t");
   Serial.println(as5600.rawAngle() * AS5600_RAW_TO_RADIANS);
 
-  delay(1000);
 }
