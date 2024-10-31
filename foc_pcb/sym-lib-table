@@ -1,0 +1,13 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "XIAO-ESP32S3")(type "EAGLE")(uri "${KIPRJMOD}/parts_lib/ESP32S3/XIAO-ESP32S3.lbr")(options "")(descr ""))
+  (lib (name "ABM3-16.000MHZ-B2-T")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/ABM3-16.000MHZ-B2-T/ABM3-16.000MHZ-B2-T.kicad_sym")(options "")(descr ""))
+  (lib (name "LM317LCPK")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/LM317LCPK/LM317LCPK.kicad_sym")(options "")(descr ""))
+  (lib (name "1N5819HW-7-F")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/1N5819HW-7-F/1N5819HW-7-F.kicad_sym")(options "")(descr ""))
+  (lib (name "BSS138-7-F")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/BSS138-7-F/BSS138-7-F.kicad_sym")(options "")(descr ""))
+  (lib (name "10118193-0001LF")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/usbMicroB/10118193-0001LF.kicad_sym")(options "")(descr ""))
+  (lib (name "AS5600-ASOT")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/AS5600-ASOT/AS5600-ASOT.kicad_sym")(options "")(descr ""))
+  (lib (name "ATMEGA328P-AU")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/ATMEGA328P-AU/ATMEGA328P-AU.kicad_sym")(options "")(descr ""))
+  (lib (name "DRV8313PWPR")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/DRV8313PWPR/DRV8313PWPR.kicad_sym")(options "")(descr ""))
+  (lib (name "XT60PW-M")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/XT60PW-M/XT60PW-M.kicad_sym")(options "")(descr ""))
+)
