@@ -30,6 +30,7 @@ float target_velocity = 5;
 // instantiate the commander
 Commander commander = Commander(Serial);
 void onMotor(char* cmd){commander.motor(&motor, cmd);}
+void onTarget(char* cmd){ commander.target(&motor,cmd); }
 
 void setup() {
 
@@ -46,7 +47,7 @@ void setup() {
 
   // driver config
   // power supply voltage [V]
-  driver.voltage_power_supply = 12;
+  driver.voltage_power_supply = 15;
   driver.init();
   // link the motor and the driver
   motor.linkDriver(&driver);
@@ -58,11 +59,10 @@ void setup() {
   // default parameters in defaults.h
 
   // velocity PI controller parameters
-  motor.PID_velocity.P = 0.3f;
+  motor.PID_velocity.P = 1.0f;
   motor.PID_velocity.I = 10;
   motor.PID_velocity.D = 0;
-  // default voltage_power_supply
-  motor.voltage_limit = 6;
+
   // jerk control using voltage voltage ramp
   // default value is 300 volts per sec  ~ 0.3V per millisecond
   motor.PID_velocity.output_ramp = 1000;
@@ -75,16 +75,21 @@ void setup() {
   // comment out if not needed
   motor.useMonitoring(Serial);
 
+  motor.sensor_direction=Direction::CCW;
+  motor.zero_electric_angle=1.82;
+
   // initialize motor
   motor.init();
   // align sensor and start FOC
   motor.initFOC();
 
   // add target command T
-  commander.add('m',onMotor,"my motor");
+  commander.add('M',onMotor,"motor config");
+  commander.add('T', onTarget, "vel target");
 
   Serial.println(F("Motor ready."));
   Serial.println(F("Set the target velocity using serial terminal:"));
+
   _delay(1000);
 }
 

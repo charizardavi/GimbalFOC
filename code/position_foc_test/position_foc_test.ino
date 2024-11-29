@@ -12,6 +12,8 @@ float target_offset = 0;
 
 Commander command = Commander(Serial);
 void doTarget(char* cmd) { command.scalar(&target_angle, cmd); }
+void doP_Angle(char* cmd) { command.scalar(&motor.P_angle.P, cmd); }
+void onMotor(char* cmd){command.motor(&motor, cmd);}
 
 void setup() {
 
@@ -43,9 +45,7 @@ void setup() {
   // default parameters in defaults.h
 
   // velocity PI controller parameters
-  motor.PID_velocity.P = 0.3f;
-  motor.PID_velocity.I = 15;
-  motor.PID_velocity.D = 0;
+  
   // maximal voltage to be set to the motor
   motor.voltage_limit = 15;
 
@@ -53,16 +53,24 @@ void setup() {
   // the lower the less filtered
   motor.LPF_velocity.Tf = 0.01f;
 
-  // angle P controller
-  motor.P_angle.P = 10;
+  // PITCH:
+  motor.PID_velocity.P = .25f;
+  motor.PID_velocity.I = 0;
+  motor.PID_velocity.D = 0;
+
+  motor.P_angle.P = 35.0F;
+  motor.P_angle.I = 4.0F;
+  motor.P_angle.D = 0.0F;
+  
+
   
   // maximal velocity of the position control
   motor.velocity_limit = 300;
 
   motor.useMonitoring(Serial);
 
-  motor.sensor_direction=Direction::CW;
-  motor.zero_electric_angle=1.3837;
+  motor.sensor_direction=Direction::CCW;
+  motor.zero_electric_angle=6.19;
 
 
   // initialize motor
@@ -71,13 +79,15 @@ void setup() {
   motor.initFOC();
 
   command.add('T', doTarget, "target angle");
+  command.add('P', doP_Angle, "angle controller P");
+  command.add('M',onMotor,"full motor config");
   
   Serial.println(F("Motor ready."));
   Serial.println(F("Set the target angle using serial terminal:"));
   _delay(1000);
 
 
-  target_offset = sensor.getAngle();
+  target_offset = motor.shaft_angle;
 }
 
 
