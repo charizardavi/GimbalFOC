@@ -60,13 +60,13 @@ void setup() {
   motor.LPF_velocity.Tf = 0.01f;
 
   // PITCH:
-  motor.PID_velocity.P = 0.5f;
-  motor.PID_velocity.I = .05;
-  motor.PID_velocity.D = 0;
+  motor.PID_velocity.P = 0.45f;
+  motor.PID_velocity.I = 0.0f;
+  motor.PID_velocity.D = 0.0f;
 
-  motor.P_angle.P = 200.0f;
-  motor.P_angle.I = 4.0F;
-  motor.P_angle.D = 0.0F;
+  motor.P_angle.P = 5.0f;
+  motor.P_angle.I = 0.0f;
+  motor.P_angle.D = .03f;
 
   motor.velocity_limit = 300;
 
