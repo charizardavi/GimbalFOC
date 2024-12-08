@@ -1,6 +1,6 @@
 # GimbalFOC
 
-![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/main/kicad_preview.png)
+![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/kicad_preview.png)
 
 A gimbal BLDC controller that uses an ATMega328p with a DRV8313PWPR. Communicates over SoftwareSerial with a parent microcontroller such as an Arduino.
 
