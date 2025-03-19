@@ -53,7 +53,7 @@ void setup() {
   motor.linkDriver(&driver);
 
   // set motion control loop to be used
-  motor.controller = MotionControlType::velocity;
+  motor.controller = MotionControlType::torque;
 
   // contoller configuration
   // default parameters in defaults.h
@@ -74,9 +74,10 @@ void setup() {
 
   // comment out if not needed
   motor.useMonitoring(Serial);
-
-  motor.sensor_direction=Direction::CCW;
-  motor.zero_electric_angle=1.82;
+  
+  Serial.print("Sensor angle: ");
+  Serial.println(sensor.getAngle());
+  
 
   // initialize motor
   motor.init();
@@ -91,6 +92,8 @@ void setup() {
   Serial.println(F("Set the target velocity using serial terminal:"));
 
   _delay(1000);
+
+  motor.target = 2;
 }
 
 void loop() {
@@ -99,4 +102,5 @@ void loop() {
   motor.move();
   // user communication
   commander.run();
+  Serial.println(F("Set the target velocity using serial terminal:"));
 }

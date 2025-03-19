@@ -1,39 +1,45 @@
 #include <SimpleFOC.h>
+#include "AS5600.h"
 
 // Motor instance
-// Replace 'pole_pairs' with the actual number of pole pairs in your motor.
 BLDCMotor motor = BLDCMotor(11);
 
 // Driver instance
-// Connect your motor to the appropriate pins.
-// Replace 'pwmA', 'pwmB', 'pwmC' with the pin numbers you've wired IN1, IN2, IN3 to.
 BLDCDriver3PWM driver = BLDCDriver3PWM(3, 5, 6, 7);
 
-// target velocity in radians per second
-float target_velocity = 1;  // Adjust this value to your needs
+
+AS5600 as5600;
+
+
+float target_velocity = 5;  // Adjust this as needed
 
 void setup() {
-  // Serial to display data
-  Serial.begin(9600);
+  // Serial monitor for debugging
+  Serial.begin(115200);
 
-  // configure driver hardware
-  driver.voltage_power_supply = 16;  // Set your power supply voltage
-  driver.voltage_limit = 15;         // Set a safe voltage limit
+  // Initialize sensor
+  Wire.begin();  // Start I2C communication
 
-  // initialize driver
+
+  // Configure driver hardware
+  driver.voltage_power_supply = 16;  // Set power supply voltage
+  driver.voltage_limit = 15;         // Set safe voltage limit
+
+  // Initialize driver
   if (!driver.init()) {
-    Serial.println("failed driver init");
+    Serial.println("Failed driver init");
     return;
   }
 
-  // link the motor and the driver
+  // Link motor to driver
   motor.linkDriver(&driver);
   motor.voltage_limit = 10;
 
-  // set control loop type to velocity
+  // Set control loop type to velocity open-loop
   motor.controller = MotionControlType::velocity_openloop;
 
-  // initialize motor
+
+  // Initialize motor
   if (!motor.init()) {
     Serial.println("Motor initialization failed!");
   } else {
@@ -41,14 +47,24 @@ void setup() {
     Serial.println("Motor will start rotating at the set target velocity.");
   }
 
+  // Set target velocity
   motor.target = target_velocity;
   _delay(1000);
+
+
+  as5600.begin(4);                         //  set direction pin.
+  as5600.setDirection(AS5600_CLOCK_WISE);  //  default, just be explicit.
 }
 
 void loop() {
-  // set motor target velocity
+  // Move motor based on open-loop velocity
   motor.move();
 
-  // // for debugging, print the actual motor velocity
-  Serial.println(motor.shaft_velocity);
+  if (Wire.requestFrom(0x36, 1) == 1) {
+    Serial.print(as5600.readAngle());
+    Serial.print("\t");
+    Serial.println(as5600.rawAngle() * AS5600_RAW_TO_RADIANS);
+  } else {
+    Serial.println("AS5600 not responding!");
+  }
 }

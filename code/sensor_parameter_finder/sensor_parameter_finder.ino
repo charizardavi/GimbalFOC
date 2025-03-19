@@ -37,18 +37,21 @@ void setup() {
   motor.linkSensor(&sensor);
 
   // aligning voltage 
-  motor.voltage_sensor_align = 7;
+  motor.voltage_sensor_align = 12;
   
   // set motion control loop to be used
   motor.controller = MotionControlType::torque;
 
   // force direction search - because default is CW
   motor.sensor_direction = Direction::UNKNOWN;
-
+  
+  Serial.print("angle: ");
+  Serial.println(sensor.getAngle());
+  
   // initialize motor
   motor.init();
   // align sensor and start FOC
-  motor.initFOC();
+  // motor.initFOC();
 
   
   Serial.println("Sensor zero offset is:");
@@ -71,7 +74,9 @@ void setup() {
 
 
 void loop() {
-    
+  Serial.print("Sensor angle: ");
+  Serial.println(sensor.getAngle(), 4);
+  delay(100);
   // main FOC algorithm function
   motor.loopFOC();
 
