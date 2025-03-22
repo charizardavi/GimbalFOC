@@ -2,15 +2,17 @@
 
 ![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/kicad_preview.png)
 
-A gimbal BLDC controller that uses an ATMega328p with a DRV8313PWPR. Communicates over SoftwareSerial with a parent microcontroller such as an Arduino.
+A gimbal BLDC controller (that will be very small soon)
 
 ## Other Parts
-- BLDC (there's a bunch that will work): https://shop.iflight.com/gimbal-motors-cat44/ipower-motor-gm6208-150t-brushless-gimbal-motor-pro208
-- Battery: Any 4-5S LiPO with an XT60 connector
+- [BLDC](https://shop.iflight.com/gimbal-motors-cat44/ipower-motor-gm4108h-120t-brushless-gimbal-motor-pro217)
+- Battery: Tested with 4S LiPO
 
 ## Completed
-- Schema
-- PCB design
+- V1
+- V2 (much smaller PCB, addition of ESP32S3)
 
 ## TODO
-- Assembly and Testing
+- completely remove ATMega328p, use ESP32S3 with dual core operation only
+- create motherboard
+- switch to three-axis
