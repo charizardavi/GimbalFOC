@@ -196,7 +196,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP3"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "0158369e-e1aa-4858-b267-9baf0ebd35fa")
 			(effects
@@ -283,7 +283,7 @@
 			)
 		)
 		(property "Value" "pullup_sda"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3238d651-0cc3-4ee4-b270-a933a774c3ed")
@@ -717,7 +717,7 @@
 		(descr "LED SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: http://www.tortai-tech.com/upload/download/2011102023233369053.pdf), generated with kicad-footprint-generator")
 		(tags "LED")
 		(property "Reference" "D5"
-			(at 0 1.524 360)
+			(at 0 1.524 0)
 			(layer "F.SilkS")
 			(uuid "762c8b16-d615-48cc-a381-2f455a7898e9")
 			(effects
@@ -779,7 +779,7 @@
 			)
 		)
 		(property "Value" "LED"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "dce65225-2dad-47f4-b453-224d3e7be07e")
@@ -955,7 +955,7 @@
 			(uuid "3ef844de-0698-4923-b239-07196d8e11fc")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "456cfc18-5b28-4a14-aabd-99542e23273b")
 			(effects
@@ -1075,7 +1075,7 @@
 			)
 		)
 		(property "Footprint" "UWT1V101MCL1GS:PCAP_6.3x7.7-ELECT_NCA-L"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "54f600c9-7b68-4d88-9b2e-fcca5ad31479")
@@ -1087,7 +1087,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "22c31e1f-9b38-4ef3-859e-40ea7d366e2c")
@@ -1099,7 +1099,7 @@
 			)
 		)
 		(property "Description" "Polarized capacitor, US symbol"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "e9d4622f-9491-4ba8-ade3-53d6f63d53d3")
@@ -1546,7 +1546,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R11"
-			(at 2.985 -0.037 360)
+			(at 2.985 -0.037 0)
 			(layer "F.SilkS")
 			(uuid "7833a2aa-3268-40cb-8a1b-16b8d902570c")
 			(effects
@@ -1589,7 +1589,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a3cbbebd-34cc-486f-b38b-180325996a52")
@@ -1745,7 +1745,7 @@
 			(uuid "adf166c2-93bb-4dd3-a3b2-5438526997c2")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "d05f37ba-492b-4bc7-9bbb-485e807ab4aa")
 			(effects
@@ -11598,7 +11598,7 @@
 		)
 		(fp_arc
 			(start 15.24 -19.2723)
-			(mid 15.2084 -19.304)
+			(mid 15.208499 -19.304)
 			(end 15.24 -19.3358)
 			(stroke
 				(width 0.01)
@@ -11873,7 +11873,7 @@
 		)
 		(fp_arc
 			(start 16.3152 -18.732)
-			(mid 16.2596 -18.777595)
+			(mid 16.2597 -18.777505)
 			(end 16.3052 -18.8331)
 			(stroke
 				(width 0.01)
@@ -12467,7 +12467,7 @@
 		)
 		(fp_arc
 			(start 15.812 -17.8392)
-			(mid 15.766495 -17.7837)
+			(mid 15.766405 -17.7836)
 			(end 15.7109 -17.8292)
 			(stroke
 				(width 0.01)
@@ -13182,7 +13182,7 @@
 		)
 		(fp_arc
 			(start 16.2794 -16.239)
-			(mid 16.348887 -16.220722)
+			(mid 16.348813 -16.220778)
 			(end 16.3306 -16.1513)
 			(stroke
 				(width 0.01)
@@ -13963,7 +13963,7 @@
 		)
 		(fp_arc
 			(start 16.0576 -15.0744)
-			(mid 16.03422 -15.00641)
+			(mid 16.03428 -15.00649)
 			(end 15.9663 -15.0298)
 			(stroke
 				(width 0.01)
@@ -14227,7 +14227,7 @@
 		)
 		(fp_arc
 			(start 1.5006 -14.749)
-			(mid 1.431113 -14.767278)
+			(mid 1.431187 -14.767222)
 			(end 1.4494 -14.8367)
 			(stroke
 				(width 0.01)
@@ -14557,7 +14557,7 @@
 		)
 		(fp_arc
 			(start 16.3152 -13.652)
-			(mid 16.2596 -13.697595)
+			(mid 16.2597 -13.697505)
 			(end 16.3052 -13.7531)
 			(stroke
 				(width 0.01)
@@ -14876,7 +14876,7 @@
 		)
 		(fp_arc
 			(start 3.302 -13.3033)
-			(mid 3.2704 -13.335)
+			(mid 3.270499 -13.335)
 			(end 3.302 -13.3668)
 			(stroke
 				(width 0.01)
@@ -15195,7 +15195,7 @@
 		)
 		(fp_arc
 			(start 15.812 -12.7592)
-			(mid 15.766495 -12.7037)
+			(mid 15.766405 -12.7036)
 			(end 15.7109 -12.7492)
 			(stroke
 				(width 0.01)
@@ -15811,7 +15811,7 @@
 		)
 		(fp_arc
 			(start 3.302 -12.0333)
-			(mid 3.2704 -12.065)
+			(mid 3.270499 -12.065)
 			(end 3.302 -12.0968)
 			(stroke
 				(width 0.01)
@@ -16042,7 +16042,7 @@
 		)
 		(fp_arc
 			(start 16.3152 -11.112)
-			(mid 16.2596 -11.157595)
+			(mid 16.2597 -11.157505)
 			(end 16.3052 -11.2131)
 			(stroke
 				(width 0.01)
@@ -16636,7 +16636,7 @@
 		)
 		(fp_arc
 			(start 15.812 -10.2192)
-			(mid 15.766495 -10.1637)
+			(mid 15.766405 -10.1636)
 			(end 15.7109 -10.2092)
 			(stroke
 				(width 0.01)
@@ -17406,7 +17406,7 @@
 		)
 		(fp_arc
 			(start 16.3152 -8.572)
-			(mid 16.2596 -8.617595)
+			(mid 16.2597 -8.617505)
 			(end 16.3052 -8.6731)
 			(stroke
 				(width 0.01)
@@ -17978,7 +17978,7 @@
 		)
 		(fp_arc
 			(start 15.812 -7.6792)
-			(mid 15.766495 -7.6237)
+			(mid 15.766405 -7.6236)
 			(end 15.7109 -7.6692)
 			(stroke
 				(width 0.01)
@@ -18649,7 +18649,7 @@
 		)
 		(fp_arc
 			(start 16.2794 -6.079)
-			(mid 16.348887 -6.060722)
+			(mid 16.348813 -6.060778)
 			(end 16.3306 -5.9913)
 			(stroke
 				(width 0.01)
@@ -19386,7 +19386,7 @@
 		)
 		(fp_arc
 			(start 16.0576 -4.9144)
-			(mid 16.03422 -4.84641)
+			(mid 16.03428 -4.84649)
 			(end 15.9663 -4.8698)
 			(stroke
 				(width 0.01)
@@ -19650,7 +19650,7 @@
 		)
 		(fp_arc
 			(start 1.5006 -4.589)
-			(mid 1.431187 -4.607222)
+			(mid 1.431113 -4.607278)
 			(end 1.4494 -4.6767)
 			(stroke
 				(width 0.01)
@@ -19958,7 +19958,7 @@
 		)
 		(fp_arc
 			(start 16.3152 -3.492)
-			(mid 16.2596 -3.537595)
+			(mid 16.2597 -3.537505)
 			(end 16.3052 -3.5931)
 			(stroke
 				(width 0.01)
@@ -20530,7 +20530,7 @@
 		)
 		(fp_arc
 			(start 15.812 -2.5992)
-			(mid 15.766495 -2.5437)
+			(mid 15.766405 -2.5436)
 			(end 15.7109 -2.5892)
 			(stroke
 				(width 0.01)
@@ -22400,7 +22400,7 @@
 		(uuid "4832e364-dacf-411d-abae-bd11beb3ff0d")
 		(at 313.69 133.858 180)
 		(property "Reference" "D1"
-			(at 3.81 0 360)
+			(at 3.81 0 0)
 			(layer "F.SilkS")
 			(uuid "cbd4e1f0-14f5-4b3a-b984-8a01464ae8a5")
 			(effects
@@ -22441,7 +22441,7 @@
 			)
 		)
 		(property "Value" "1N5819HW-7-F"
-			(at 1.158204 1.445961 360)
+			(at 1.158204 1.445961 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "a2ed70d2-e68e-4673-921e-7c49daabce8d")
@@ -22453,7 +22453,7 @@
 			)
 		)
 		(property "Footprint" "1N5819HW-7-F:SOD3715X145N"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "67f98b5d-14f6-4d39-9eb3-1f75d25b57b5")
@@ -22465,7 +22465,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "056476f3-c69f-4f74-b6e6-92fec33a0663")
@@ -22477,7 +22477,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "24a24771-c855-4d9b-8ca9-1ce078e4b96c")
@@ -25827,7 +25827,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP2"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "1df20d88-1767-4eb7-94ff-849901f20a13")
 			(effects
@@ -25906,7 +25906,7 @@
 			)
 		)
 		(property "Value" "pullup_scl"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "aea1924d-bdd4-4bb6-afdc-19e60f31863f")
@@ -26098,7 +26098,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP5"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "c608ca37-bdd4-4b0f-bc1f-c221ec84cf6d")
 			(effects
@@ -26176,7 +26176,7 @@
 			)
 		)
 		(property "Value" "3V3 ESP"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "3fe5e595-ee89-48bf-8975-a3819502a378")
@@ -26736,7 +26736,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "2afd2e60-039f-4dca-8565-8de4bd9a4da7")
@@ -26892,7 +26892,7 @@
 			(uuid "4b4a7fba-3566-49a1-806e-9467077481c8")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "7acf9464-7047-4f4a-8cff-c38db62944bf")
 			(effects
@@ -27440,7 +27440,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R10"
-			(at 0 -1.43 360)
+			(at 0 -1.43 0)
 			(layer "F.SilkS")
 			(uuid "c26093f3-4157-418a-b506-f8b407c80c1d")
 			(effects
@@ -27513,7 +27513,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "37dde3b3-0a9e-42f8-b9d5-87d833276938")
@@ -27669,7 +27669,7 @@
 			(uuid "fa9da3a0-f19e-4940-950f-db75e7814669")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "2d3285b7-da6e-40e7-9364-4da5ddaa158b")
 			(effects
@@ -27716,7 +27716,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP1"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "8fbd14c9-4ecf-48d8-934a-001877ee9246")
 			(effects
@@ -27773,7 +27773,7 @@
 			)
 		)
 		(property "Value" "esp_diode_skip"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "c5fb081d-e79a-4bbd-aa38-3fa97d04e31b")
@@ -28514,7 +28514,7 @@
 		(descr "Resistor SMD 0603 (1608 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R9"
-			(at -3.048 0 360)
+			(at -3.048 0 0)
 			(layer "F.SilkS")
 			(uuid "d26d6acd-d513-4939-b0e5-15eb2f47d4dd")
 			(effects
@@ -28588,7 +28588,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 0 1.43 360)
+			(at 0 1.43 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "5e0f8f40-9f8c-433d-8ee8-05d1f8a7f4dd")
@@ -28744,7 +28744,7 @@
 			(uuid "790452ed-ea8b-4b2f-ad66-f0212c55bc44")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "b50ad715-03bd-46d3-8f65-ae4e425079c8")
 			(effects
@@ -29652,7 +29652,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP4"
-			(at 0 -1.8 360)
+			(at 0 -1.8 0)
 			(layer "F.SilkS")
 			(uuid "a4e04e77-b5b3-4aba-9e91-e967498a9a46")
 			(effects
@@ -29711,7 +29711,7 @@
 			)
 		)
 		(property "Value" "3V3 DRV"
-			(at 0 1.9 360)
+			(at 0 1.9 0)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "de13d204-7b88-4522-a1ff-a94f63f3dae3")
