@@ -2,7 +2,6 @@
   (version 7)
   (lib (name "1N5819HW-7-F")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/1N5819HW-7-F")(options "")(descr ""))
   (lib (name "ABM3-16.000MHZ-B2-T")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/ABM3-16.000MHZ-B2-T")(options "")(descr ""))
-  (lib (name "AS5600-ASOT")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/AS5600-ASOT")(options "")(descr ""))
   (lib (name "ATMEGA328P-AU")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/ATMEGA328P-AU")(options "")(descr ""))
   (lib (name "ATMEGA328P-AU-NEW")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/ATMEGA328P-AU-NEW")(options "")(descr ""))
   (lib (name "BSS138-7-F")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/BSS138-7-F")(options "")(descr ""))
@@ -13,4 +12,5 @@
   (lib (name "DRV8313PWPR")(type "EasyEDA / JLCEDA Pro")(uri "${KIPRJMOD}/parts_lib/DRV8313PWPR/DRV8313PWPR.elibz")(options "")(descr ""))
   (lib (name "UWT1V101MCL1GS")(type "KiCad")(uri "${KIPRJMOD}/parts_lib/UWT1V101MCL1GS/footprints.pretty")(options "")(descr ""))
   (lib (name "YTS-A011-2B")(type "EasyEDA / JLCEDA Pro")(uri "${KIPRJMOD}/parts_lib/YTS-A011-2B/YTS-A011-2B.elibz")(options "")(descr ""))
+  (lib (name "MT6701CT-STD")(type "EasyEDA / JLCEDA Pro")(uri "${KIPRJMOD}/parts_lib/MT6701CT-STD/MT6701CT-STD.elibz")(options "")(descr ""))
 )
