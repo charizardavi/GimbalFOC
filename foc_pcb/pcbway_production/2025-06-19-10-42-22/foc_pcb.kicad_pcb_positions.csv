@@ -1,0 +1,29 @@
+﻿pos_x,pos_y,rotation,side,designator,mpn,pack,footprint,value,mount_type
+317.5,-143.51,-90.0,top,C1,,,C_0603_1608Metric,100nF,smt
+317.754,-135.382,90.0,top,C2,,,C_0603_1608Metric,100nF,smt
+308.61,-143.51,90.0,top,C3,,,C_0603_1608Metric,.1uF,smt
+313.69,-149.352,0.0,top,C4,,,C_0603_1608Metric,100nF,smt
+324.612,-145.542,0.0,top,C5,,,PCAP_6.3x7.7-ELECT_NCA-L,UWT1V101MCL1GS,smt
+315.722,-143.523,-90.0,top,C6,,,C_0603_1608Metric,470nF,smt
+331.724,-158.2675,-90.0,top,D1,,,LED_0603_1608Metric,LED,smt
+301.244,-157.889999,-90.0,top,D2,,None,SOD3715X145N,1N5819HW-7-F,smt
+312.166,-130.302,-90.0,top,J1,,,PinHeader_1x03_P2.54mm_Vertical,Conn_01x03,tht
+293.162292,-154.983815,-72.0,top,J2,,,JST_VH_B2P-VH_1x02_P3.96mm_Vertical,BATT_IN,tht
+294.64,-145.796,180.0,top,J3,,,PinHeader_2x02_P2.54mm_Vertical,power_supply,tht
+331.724,-150.114,180.0,top,J4,,,PinHeader_1x04_P2.00mm_Vertical,IMU,tht
+322.376156,-132.608121,-110.0,top,J5,,,PinHeader_1x04_P2.00mm_Vertical,ESP,tht
+319.532,-135.419,-90.0,top,R1,,,R_0603_1608Metric,10k,smt
+319.532,-138.684,90.0,top,R10,,,R_0603_1608Metric,4.7k,smt
+317.754,-138.684,90.0,top,R11,,,R_0603_1608Metric,4.7k,smt
+330.708,-160.782,0.0,top,R2,,,R_0603_1608Metric,1k,smt
+305.054,-143.51,-90.0,top,R3,,,R_0603_1608Metric,200,smt
+306.832,-143.51,90.0,top,R4,,,R_0603_1608Metric,590,smt
+310.439,-151.003,0.0,top,R5,,,R_0603_1608Metric,1k,smt
+310.388,-143.46,-90.0,top,R6,,,R_0603_1608Metric,10k,smt
+310.439,-149.352,180.0,top,R7,,,R_0603_1608Metric,1k,smt
+312.166,-143.46,-90.0,top,R8,,,R_0603_1608Metric,10k,smt
+313.884,-143.46,-90.0,top,R9,,,R_0603_1608Metric,10k,smt
+310.481,-137.596,180.0,top,U1,,HTSSOP-28 Texas Instruments,HTSSOP-28_L9.8-W4.5-P0.65-LS6.6-BL-EP,DRV8313PWPR,tht
+311.940034,-151.306645,0.0,bottom,U2,,,SOP-8_L4.9-W3.9-P1.27-LS6.0-BL,~,tht
+320.910517,-152.509833,180.0,top,U3,,,MOUDLE14P-SMD-2.54-21X17.8MM,~,tht
+299.466,-149.352,-90.0,top,VR1,,SOT-89-3 Texas Instruments,VREG_LM317LCPK,LM317LCPK,smt

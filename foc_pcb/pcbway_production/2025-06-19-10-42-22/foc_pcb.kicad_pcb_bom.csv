@@ -1,0 +1,25 @@
+﻿Designator,Quantity,Value,Footprint,Package,MPN,DNP,Mount_Type,Description,MF,Purchase-URL,Check_prices,STANDARD,PARTREV,SnapEDA_Link,MP,Description_1,MANUFACTURER,DigiKey_Part_Number,SNAPEDA_PACKAGE_ID,MAXIMUM_PACKAGE_HEIGHT,Manufacturer Part,Manufacturer,Supplier Part,Supplier,LCSC Part Name
+"C1, C2, C4",3,100nF,C_0603_1608Metric,,,,smt,Unpolarized capacitor,,,,,,,,,,,,,,,,,
+C3,1,.1uF,C_0603_1608Metric,,,,smt,Unpolarized capacitor,,,,,,,,,,,,,,,,,
+C5,1,UWT1V101MCL1GS,PCAP_6.3x7.7-ELECT_NCA-L,,,,smt,"Polarized capacitor, US symbol",,,,,,,,,,,,,,,,,
+C6,1,470nF,C_0603_1608Metric,,,,smt,Unpolarized capacitor,,,,,,,,,,,,,,,,,
+D1,1,LED,LED_0603_1608Metric,,,,smt,Light emitting diode,,,,,,,,,,,,,,,,,
+D2,1,1N5819HW-7-F,SOD3715X145N,None,,,smt,,Diodes Zetex,https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4796063&manufacturer=Diodes Zetex&part_name=1N5819HW-7-F&search_term=None,https://www.snapeda.com/parts/1N5819HW-7-F/Zetex/view-part/?ref=eda,IPC-7351B,18-2,https://www.snapeda.com/parts/1N5819HW-7-F/Zetex/view-part/?ref=snap,1N5819HW-7-F,"
+Diode Schottky 40V 1A 2-Pin SOD-123 T/R
+",Diodes Inc.,,,,,,,,
+J1,1,Conn_01x03,PinHeader_1x03_P2.54mm_Vertical,,,,tht,"Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",,,,,,,,,,,,,,,,,
+J2,1,BATT_IN,JST_VH_B2P-VH_1x02_P3.96mm_Vertical,,,,tht,"Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",,,,,,,,,,,,,,,,,
+J3,1,power_supply,PinHeader_2x02_P2.54mm_Vertical,,,,tht,"Generic connector, double row, 02x02, counter clockwise pin numbering scheme (similar to DIP package numbering), script generated (kicad-library-utils/schlib/autogen/connector/)",,,,,,,,,,,,,,,,,
+J4,1,IMU,PinHeader_1x04_P2.00mm_Vertical,,,,tht,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",,,,,,,,,,,,,,,,,
+J5,1,ESP,PinHeader_1x04_P2.00mm_Vertical,,,,tht,"Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",,,,,,,,,,,,,,,,,
+"R1, R6, R8, R9",4,10k,R_0603_1608Metric,,,,smt,Resistor,,,,,,,,,,,,,,,,,
+"R10, R11",2,4.7k,R_0603_1608Metric,,,,smt,Resistor,,,,,,,,,,,,,,,,,
+"R2, R5, R7",3,1k,R_0603_1608Metric,,,,smt,Resistor,,,,,,,,,,,,,,,,,
+R3,1,200,R_0603_1608Metric,,,,smt,Resistor,,,,,,,,,,,,,,,,,
+R4,1,590,R_0603_1608Metric,,,,smt,Resistor,,,,,,,,,,,,,,,,,
+U1,1,DRV8313PWPR,HTSSOP-28_L9.8-W4.5-P0.65-LS6.6-BL-EP,HTSSOP-28 Texas Instruments,,,tht,65-V max 3-A peak 3-phase motor driver with integrated FETs,Texas Instruments,,https://www.snapeda.com/parts/DRV8313PWPR/Texas+Instruments/view-part/?ref=eda,Manufacturer Recommendations,D,https://www.snapeda.com/parts/DRV8313PWPR/Texas+Instruments/view-part/?ref=snap,DRV8313PWPR,,Texas Instruments,296-40072-2-ND,102627,1.2 mm,,,,,
+U2,1,~,SOP-8_L4.9-W3.9-P1.27-LS6.0-BL,,,,tht,,,,,,,,,,,,,,MT6701CT-STD,MagnTek(麦歌恩),C2856764,LCSC,霍尔在线编程角度位置传感器
+U3,1,~,MOUDLE14P-SMD-2.54-21X17.8MM,,,,tht,,,,,,,,,,,,,,,,,,
+VR1,1,LM317LCPK,VREG_LM317LCPK,SOT-89-3 Texas Instruments,,,smt,,Texas Instruments,https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=354472&manufacturer=Texas Instruments&part_name=LM317LCPK&search_term=None,https://www.snapeda.com/parts/LM317LCPK/Texas+Instruments/view-part/?ref=eda,Manufacturer Recommendations,E,https://www.snapeda.com/parts/LM317LCPK/Texas+Instruments/view-part/?ref=snap,LM317LCPK,"
+100-mA, 35-V, adjustable linear voltage regulator
+",Texas Instruments,296-26093-2-ND,102648,1.6 mm,,,,,
