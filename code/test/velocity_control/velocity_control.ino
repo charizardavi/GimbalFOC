@@ -1,106 +1,70 @@
-/**
- *
- * Velocity motion control example
- * Steps:
- * 1) Configure the motor and magnetic sensor
- * 2) Run the code
- * 3) Set the target velocity (in radians per second) from serial terminal
- *
- *
- * By using the serial terminal set the velocity value you want to motor to obtain
- *
- */
 #include <SimpleFOC.h>
 
-// magnetic sensor instance - SPI
-MagneticSensorI2C sensor = MagneticSensorI2C(AS5600_I2C);
-// magnetic sensor instance - MagneticSensorI2C
-//MagneticSensorI2C sensor = MagneticSensorI2C(AS5600_I2C);
-// MagneticSensorAnalog sensor = MagneticSensorAnalog(A1, 14, 1020);
 
-// BLDC motor & driver instance
+MagneticSensorI2C sensor = MagneticSensorI2C(MT6701_I2C);
+
 BLDCMotor motor = BLDCMotor(11);
-BLDCDriver3PWM driver = BLDCDriver3PWM(3, 5, 6, 7);
-// Stepper motor & driver instance
-//StepperMotor motor = StepperMotor(50);
-//StepperDriver4PWM driver = StepperDriver4PWM(9, 5, 10, 6,  8);
+BLDCDriver3PWM driver = BLDCDriver3PWM(D1, D2, D3, D0);
 
-// velocity set point variable
-float target_velocity = 5;
-// instantiate the commander
 Commander commander = Commander(Serial);
-void onMotor(char* cmd){commander.motor(&motor, cmd);}
-void onTarget(char* cmd){ commander.target(&motor,cmd); }
-
-void setup() {
-
-  // use monitoring with serial 
-  Serial.begin(115200);
-  // enable more verbose output for debugging
-  // comment out if not needed
-  SimpleFOCDebug::enable(&Serial);
-
-  // initialise magnetic sensor hardware
-  sensor.init();
-  // link the motor to the sensor
-  motor.linkSensor(&sensor);
-
-  // driver config
-  // power supply voltage [V]
-  driver.voltage_power_supply = 15;
-  driver.init();
-  // link the motor and the driver
-  motor.linkDriver(&driver);
-
-  // set motion control loop to be used
-  motor.controller = MotionControlType::torque;
-
-  // contoller configuration
-  // default parameters in defaults.h
-
-  // velocity PI controller parameters
-  motor.PID_velocity.P = 1.0f;
-  motor.PID_velocity.I = 10;
-  motor.PID_velocity.D = 0;
-
-  // jerk control using voltage voltage ramp
-  // default value is 300 volts per sec  ~ 0.3V per millisecond
-  motor.PID_velocity.output_ramp = 1000;
-
-  // velocity low pass filtering
-  // default 5ms - try different values to see what is the best.
-  // the lower the less filtered
-  motor.LPF_velocity.Tf = 0.01f;
-
-  // comment out if not needed
-  motor.useMonitoring(Serial);
-  
-  Serial.print("Sensor angle: ");
-  Serial.println(sensor.getAngle());
-  
-
-  // initialize motor
-  motor.init();
-  // align sensor and start FOC
-  motor.initFOC();
-
-  // add target command T
-  commander.add('M',onMotor,"motor config");
-  commander.add('T', onTarget, "vel target");
-
-  Serial.println(F("Motor ready."));
-  Serial.println(F("Set the target velocity using serial terminal:"));
-
-  _delay(1000);
-
-  motor.target = 2;
+void onMotor(char* cmd) {
+  commander.motor(&motor, cmd);
 }
 
+static uint64_t lastFOC = 0;         // micros() is 64-bit on ESP32-S3
+const uint32_t FOC_PERIOD_US = 200;  // 5 kHz update rate
+
+void zeroPids(char*) {
+  motor.PID_velocity.reset();
+  Serial.println(F("Velocity PID reset"));
+}
+
+void setup() {
+  Serial.begin(115200);
+
+
+  // — DRIVER —
+  driver.voltage_power_supply = 16;  // 15 V rail
+  driver.pwm_frequency = 25000;      // 25 kHz PWM
+  driver.init();
+  motor.linkDriver(&driver);
+
+  // — SENSOR —
+  sensor.init();
+  motor.linkSensor(&sensor);
+  
+  // — MOTOR CONTROL —
+  motor.controller = MotionControlType::velocity;
+  motor.foc_modulation = FOCModulationType::SinePWM;
+  motor.voltage_limit = 7.0;  // ≤0.7 A ➜ <3 W copper loss
+
+  // motor.voltage_limit = 6;                // extra safety
+  // motor.velocity_limit= 20;               // rad s-1 (≈190 rpm)
+  // Velocity PID (rad s-1)
+  motor.PID_velocity.P = 0.4;
+  motor.PID_velocity.I = 0;
+  motor.PID_velocity.D = 0;
+  // manual calibration (optional, remove to auto-cal):
+  // motor.zero_electric_angle = 2.066273;
+  // motor.sensor_direction = Direction::CCW;
+  // Init FOC
+  motor.useMonitoring(Serial);
+  motor.init();
+  motor.initFOC();
+  Serial.println("FOC ready (velocity)");
+  // Commander CLI
+  commander.add('M', onMotor);
+  commander.add('Z', zeroPids, "zero pids");
+  Serial.println("\nType  M  <enter>  for command list");
+}
+
+// ────────── MAIN LOOP ──────────────────────────────────────────
 void loop() {
   motor.loopFOC();
-  
-  motor.move();
-  // user communication
-  commander.run();
-  Serial.println(F("Set the target velocity using serial terminal:"));
+  motor.move(2.0);     // default target = motor.target
+  // commander.run();  // handle CLI
+                    // debug stream (angle [rad]  |  velocity [rad s-1])
+                    // Serial.print(sensor.getAngle());
+                    // Serial.print('\t');
+                    // Serial.println(sensor.getVelocity());
 }
