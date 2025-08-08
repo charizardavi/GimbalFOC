@@ -1,6 +1,9 @@
 # GimbalFOC
 
-![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/V3.JPG)
+![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/images/V3.JPG)
+
+## Sponsored By
+![pcbway logo](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/images/pcbway-logo.png)
 
 A gimbal BLDC controller:
 - MCU: ESP32-S3 (XIAO)
