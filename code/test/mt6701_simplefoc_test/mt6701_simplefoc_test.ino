@@ -1,24 +1,29 @@
+#include <Wire.h>
+#include <MT6701.h>
 #include <SimpleFOC.h>
 
-MagneticSensorI2C sensor = MagneticSensorI2C(MT6701_I2C);
+MT6701 encoder;
+
+float read_mt6701_radians() {
+  return encoder.angleRead() * PI / 180.0f;
+}
+
+void init_mt6701() {
+  Wire.setClock(400000);
+  Wire.begin();
+  encoder.initializeI2C();
+}
+
+GenericSensor sensor = GenericSensor(read_mt6701_radians, init_mt6701);
+
 
 void setup() {
-  // monitoring port
   Serial.begin(115200);
-
-  // init magnetic sensor hardware
   sensor.init();
-
-  Serial.println("MT6701 ready");
-  _delay(1000);
+  Serial.println(F("MT6701 + SimpleFOC ready"));
 }
 
 void loop() {
-  // IMPORTANT - call as frequently as possible
-  // update the sensor values 
   sensor.update();
-  // display the angle and the angular velocity to the terminal
-  Serial.print(sensor.getAngle());
-  Serial.print("\t");
-  Serial.println(sensor.getVelocity());
+  Serial.println(sensor.getAngle(), 6);
 }

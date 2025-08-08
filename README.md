@@ -1,8 +1,10 @@
 # GimbalFOC
 
-![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/kicad_preview.png)
+![pcb image](https://raw.githubusercontent.com/charizardavi/GimbalFOC/refs/heads/master/V3.png)
 
-A gimbal BLDC controller (that will be very small soon)
+A gimbal BLDC controller:
+- MCU: ESP32-S3 (XIAO)
+- Motor Controller: DRV8813
 
 ## Other Parts
 - [BLDC](https://shop.iflight.com/gimbal-motors-cat44/ipower-motor-gm4108h-120t-brushless-gimbal-motor-pro217)
@@ -13,6 +15,4 @@ A gimbal BLDC controller (that will be very small soon)
 - V2 (much smaller PCB, addition of ESP32S3)
 
 ## TODO
-- completely remove ATMega328p, use ESP32S3 with dual core operation only
-- create motherboard
-- switch to three-axis
+- Build and test 3-axis
